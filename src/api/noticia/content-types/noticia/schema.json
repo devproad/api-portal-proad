@@ -29,18 +29,11 @@
     "Content": {
       "type": "richtext"
     },
-    "Link": {
-      "type": "string"
+    "Description": {
+      "type": "text"
     },
-    "LinkName": {
+    "Date": {
       "type": "string"
-    },
-    "Links": {
-      "type": "enumeration",
-      "enum": [
-        "link1",
-        "link2"
-      ]
     }
   }
 }
