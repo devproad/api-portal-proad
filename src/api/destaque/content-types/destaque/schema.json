@@ -12,23 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "noticia": {
+    "noticias": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::noticia.noticia",
-      "inversedBy": "destaques"
-    },
-    "editais_e_licitacoe": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::edital-licitacao.edital-licitacao",
-      "inversedBy": "destaques"
-    },
-    "editais_homologado": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::edital-homologado.edital-homologado",
-      "inversedBy": "destaques"
+      "mappedBy": "destaque"
     }
   }
 }

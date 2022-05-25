@@ -35,15 +35,15 @@
     "Date": {
       "type": "string"
     },
-    "destaques": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::destaque.destaque",
-      "mappedBy": "noticia"
-    },
     "descricaoDestaques": {
       "type": "string",
       "maxLength": 111
+    },
+    "destaque": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::destaque.destaque",
+      "inversedBy": "noticias"
     }
   }
 }
