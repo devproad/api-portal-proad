@@ -44,6 +44,16 @@
       "relation": "manyToOne",
       "target": "api::destaque.destaque",
       "inversedBy": "noticias"
+    },
+    "Documentos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
