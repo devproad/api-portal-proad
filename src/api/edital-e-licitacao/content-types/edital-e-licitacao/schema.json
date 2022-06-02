@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "editais_e_licitacoes",
+  "info": {
+    "singularName": "edital-e-licitacao",
+    "pluralName": "editais-e-licitacoes",
+    "displayName": "Editais e Licitações"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "noticia": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::noticia.noticia",
+      "inversedBy": "editais_e_licitacoe"
+    }
+  }
+}

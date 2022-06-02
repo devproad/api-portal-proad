@@ -20,10 +20,7 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "Content": {
@@ -39,12 +36,6 @@
       "type": "string",
       "maxLength": 111
     },
-    "destaque": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::destaque.destaque",
-      "inversedBy": "noticias"
-    },
     "Arquivo": {
       "type": "media",
       "multiple": true,
@@ -55,6 +46,24 @@
         "videos",
         "audios"
       ]
+    },
+    "destaque": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::destaque.destaque",
+      "inversedBy": "noticias"
+    },
+    "editais_e_licitacoe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::edital-e-licitacao.edital-e-licitacao",
+      "inversedBy": "noticia"
+    },
+    "editais_homologado": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::edital-homologado.edital-homologado",
+      "inversedBy": "noticia"
     }
   }
 }

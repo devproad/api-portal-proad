@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "editais_homologados",
+  "info": {
+    "singularName": "edital-homologado",
+    "pluralName": "editais-homologados",
+    "displayName": "Editais Homologados"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "noticia": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::noticia.noticia",
+      "inversedBy": "editais_homologado"
+    }
+  }
+}

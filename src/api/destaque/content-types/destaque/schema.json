@@ -17,6 +17,10 @@
       "relation": "oneToMany",
       "target": "api::noticia.noticia",
       "mappedBy": "destaque"
+    },
+    "destacado": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
